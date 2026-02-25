@@ -7,13 +7,10 @@ import os
 import json
 import time
 
-OPIK_API_KEY = os.getenv('OPIK_API_KEY')
-OPIK_WORKSPACE = os.getenv('OPIK_WORKSPACE', 'comet-demos')
-PROJECT_NAME = "Opik Agent Observability"
+PROJECT_NAME = os.getenv("PROJECT_NAME", "CRM-Chatbot-Agent-Opik")
 
-# Create Opik client with explicit parameters
-client = opik.Opik(api_key=OPIK_API_KEY, workspace=OPIK_WORKSPACE)
-
+# Uses the config from opik.configure() (API key + workspace from ~/.opik.config)
+client = opik.Opik()
 
 def load_traces():
     """Load traces from local JSON file."""
