@@ -132,57 +132,6 @@
     "duration": 100.0
   },
   {
-    "id": "span-001-contact-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0001-7000-8000-000000000001",
-    "parent_span_id": "span-001-contact-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:15:31.523456+00:00",
-    "end_time": "2025-11-14 10:15:33.356789+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "What's the status of our deal with Greenleaf Tech?"
-        },
-        {
-          "role": "user",
-          "content": "\nYou are a CRM contact tool and need to simulate a response to a query using realistic but invented data.\nThe goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\nQuery: \"What's the status of our deal with Greenleaf Tech?\"\n\nContext: {\n    \"customer\": {\n        \"contact\": {\n            \"name\": \"Jessica Lau\",\n            \"title\": \"Head of IT Procurement\",\n            \"email\": \"jessica.lau@greenleaftech.com\",\n            \"status\": \"High-value prospect\"\n        },\n        \"company\": \"Greenleaf Tech\",\n        \"industry\": \"Renewable Energy Tech\",\n        \"deal_stage\": \"Proposal Sent\",\n        \"deal_size_estimate\": 85000,\n        \"lead_source\": \"Webinar sign-up\",\n        \"lead_source_date\": \"2025-03-15\",\n        \"last_contacted\": \"2025-05-12\",\n        \"engagement\": {\n            \"emails_opened\": 6,\n            \"emails_sent\": 7,\n            \"average_email_open_time_hours\": 2,\n            \"outreach_responses\": 3,\n            \"outreach_sent\": 5,\n            \"demos_attended\": [\n                \"2025-04-04\",\n                \"2025-05-09\"\n            ],\n            \"downloads\": [\n                {\n                    \"title\": \"Energy Grid Optimization\",\n                    \"date\": \"2025-04-17\"\n                }\n            ]\n        },\n        \"internal_notes\": [\n            \"Interested in predictive maintenance features\",\n            \"Has decision authority but awaiting CFO sign-off\",\n            \"Expressed need to implement Q3 (starting July)\"\n        ]\n    }\n}\n"
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "The deal with Greenleaf Tech is currently in 'Proposal Sent' stage. The main contact is Jessica Lau, Head of IT Procurement, who has decision authority but is awaiting CFO sign-off.",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 28,
-      "prompt_tokens": 376,
-      "total_tokens": 404
-    },
-    "duration": 1833.333
-  },
-  {
     "id": "span-001-format",
     "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
     "trace_id": "019a832e-0001-7000-8000-000000000001",
@@ -398,65 +347,6 @@
     "duration": 100.0
   },
   {
-    "id": "span-002-contact-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0002-7000-8000-000000000002",
-    "parent_span_id": "span-002-contact-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:20:16.634567+00:00",
-    "end_time": "2025-11-14 10:20:19.467890+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "What's the status of our deal with Greenleaf Tech?"
-        },
-        {
-          "role": "assistant",
-          "content": "The deal with Greenleaf Tech is currently in the 'Proposal Sent' stage. Your main contact there is Jessica Lau, the Head of IT Procurement. She has decision-making authority but is still waiting for CFO approval."
-        },
-        {
-          "role": "user",
-          "content": "When was the last time we contacted Jessica?"
-        },
-        {
-          "role": "user",
-          "content": "\nYou are a CRM contact tool and need to simulate a response to a query using realistic but invented data.\nThe goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\nQuery: \"When was the last time we contacted Jessica?\"\n\nContext: {\n    \"customer\": {\n        \"contact\": {\n            \"name\": \"Jessica Lau\",\n            \"title\": \"Head of IT Procurement\",\n            \"email\": \"jessica.lau@greenleaftech.com\",\n            \"status\": \"High-value prospect\"\n        },\n        \"company\": \"Greenleaf Tech\",\n        \"industry\": \"Renewable Energy Tech\",\n        \"deal_stage\": \"Proposal Sent\",\n        \"deal_size_estimate\": 85000,\n        \"lead_source\": \"Webinar sign-up\",\n        \"lead_source_date\": \"2025-03-15\",\n        \"last_contacted\": \"2025-05-12\",\n        \"engagement\": {\n            \"emails_opened\": 6,\n            \"emails_sent\": 7,\n            \"average_email_open_time_hours\": 2,\n            \"outreach_responses\": 3,\n            \"outreach_sent\": 5,\n            \"demos_attended\": [\n                \"2025-04-04\",\n                \"2025-05-09\"\n            ],\n            \"downloads\": [\n                {\n                    \"title\": \"Energy Grid Optimization\",\n                    \"date\": \"2025-04-17\"\n                }\n            ]\n        },\n        \"internal_notes\": [\n            \"Interested in predictive maintenance features\",\n            \"Has decision authority but awaiting CFO sign-off\",\n            \"Expressed need to implement Q3 (starting July)\"\n        ]\n    }\n}\n"
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "The last contact with Jessica Lau was on 2025-05-12.",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 12,
-      "prompt_tokens": 429,
-      "total_tokens": 441
-    },
-    "duration": 2833.323
-  },
-  {
     "id": "span-002-format",
     "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
     "trace_id": "019a832e-0002-7000-8000-000000000002",
@@ -653,57 +543,6 @@
       "output": "Look, I can't read your mind. You're complaining but not actually asking a question. I handle contacts, accounts, deals, and sales data. If you want something specific, ask a specific question. What do you actually need?"
     },
     "duration": 9223.233
-  },
-  {
-    "id": "span-005-fallback-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0005-7000-8000-000000000005",
-    "parent_span_id": "span-005-fallback-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:35:11.767890+00:00",
-    "end_time": "2025-11-14 10:35:20.790123+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "This is ridiculous! Why can't you just tell me what I need to know? I asked a simple question and you're giving me excuses!"
-        },
-        {
-          "role": "user",
-          "content": "\nYou are a backend CRM tool. Return an explanation on why you cannot respond to the query, as it is not related to your domain of expertise.\n\nQuery: This is ridiculous! Why can't you just tell me what I need to know? I asked a simple question and you're giving me excuses!\n"
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "Look, I can't read your mind. You're complaining but not actually asking a question. I handle contacts, accounts, deals, and sales data. If you want something specific, ask a specific question. What do you actually need?",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 78,
-      "prompt_tokens": 62,
-      "total_tokens": 140
-    },
-    "duration": 9023.233
   },
   {
     "id": "span-005-format",
@@ -905,57 +744,6 @@
     "duration": 100.0
   },
   {
-    "id": "span-003-sales-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0003-7000-8000-000000000003",
-    "parent_span_id": "span-003-sales-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:25:46.745678+00:00",
-    "end_time": "2025-11-14 10:25:52.578901+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "Show me our sales pipeline for Q4"
-        },
-        {
-          "role": "user",
-          "content": "\n    You are a CRM sales analytics tool and need to simulate a response to a query using realistic but invented data.\n    The goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\n    Query: Show me our sales pipeline for Q4\n\n    Context: {\"deals\": [{\"deal_id\": \"DH-1001\", \"account\": \"Greenleaf Tech\", \"stage\": \"Proposal Sent\", \"value\": 85000}, {\"deal_id\": \"DH-1029\", \"account\": \"NovaHealth Systems\", \"stage\": \"Negotiation\", \"value\": 85000}]}\n    "
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "I can see information about individual deals, but I don't have access to aggregate Q4 pipeline data across all accounts. I can help you with specific account deal information if you'd like.",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 52,
-      "prompt_tokens": 380,
-      "total_tokens": 432
-    },
-    "duration": 5833.223
-  },
-  {
     "id": "span-003-format",
     "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
     "trace_id": "019a832e-0003-7000-8000-000000000003",
@@ -1153,57 +941,6 @@
       "output": "{\"deals\": [{\"deal_id\": \"DH-1029\", \"account\": \"NovaHealth Systems\", \"stage\": \"Negotiation\", \"value\": 85000}, {\"deal_id\": \"DH-1007\", \"account\": \"NovaHealth Systems\", \"stage\": \"Closed Won\", \"value\": 45000}, {\"deal_id\": \"DH-1018\", \"account\": \"NovaHealth Systems\", \"stage\": \"Closed Won\", \"value\": 67000}]}"
     },
     "duration": 100.0
-  },
-  {
-    "id": "span-004-sales-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0004-7000-8000-000000000004",
-    "parent_span_id": "span-004-sales-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:30:21.856789+00:00",
-    "end_time": "2025-11-14 10:30:26.689012+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "What deals do we have with NovaHealth Systems?"
-        },
-        {
-          "role": "user",
-          "content": "\n    You are a CRM sales analytics tool and need to simulate a response to a query using realistic but invented data.\n    The goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\n    Query: What deals do we have with NovaHealth Systems?\n\n    Context: {\"deals\": [{\"deal_id\": \"DH-1029\", \"account\": \"NovaHealth Systems\", \"stage\": \"Negotiation\", \"value\": 85000}, {\"deal_id\": \"DH-1007\", \"account\": \"NovaHealth Systems\", \"stage\": \"Closed Won\", \"value\": 45000}, {\"deal_id\": \"DH-1018\", \"account\": \"NovaHealth Systems\", \"stage\": \"Closed Won\", \"value\": 67000}]}\n    "
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "NovaHealth Systems has one active deal (DH-1029) for Mobile Patient Portal in Negotiation stage, expected value $85,000. They also have two closed deals: DH-1007 (EHR Integration Suite, $45,000) and DH-1018 (AI Diagnostics Module, $67,000).",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 68,
-      "prompt_tokens": 395,
-      "total_tokens": 463
-    },
-    "duration": 4832.223
   },
   {
     "id": "span-004-format",
@@ -1437,57 +1174,6 @@
     "duration": 100.0
   },
   {
-    "id": "span-006-contact-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0006-7000-8000-000000000006",
-    "parent_span_id": "span-006-contact-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:40:32.078901+00:00",
-    "end_time": "2025-11-14 10:40:35.801234+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "Fine! What's the email for Jessica at Greenleaf?"
-        },
-        {
-          "role": "user",
-          "content": "\nYou are a CRM contact tool and need to simulate a response to a query using realistic but invented data.\nThe goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\nQuery: \"Fine! What's the email for Jessica at Greenleaf?\"\n\nContext: {\"customer\": {\"contact\": {\"name\": \"Jessica Lau\", \"email\": \"jessica.lau@greenleaftech.com\"}}}\n"
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "Jessica Lau's email is jessica.lau@greenleaftech.com.",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 15,
-      "prompt_tokens": 465,
-      "total_tokens": 480
-    },
-    "duration": 3722.333
-  },
-  {
     "id": "span-006-format",
     "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
     "trace_id": "019a832e-0006-7000-8000-000000000006",
@@ -1687,57 +1373,6 @@
     "duration": 100.0
   },
   {
-    "id": "span-007-sales-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0007-7000-8000-000000000007",
-    "parent_span_id": "span-007-sales-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:45:17.189012+00:00",
-    "end_time": "2025-11-14 10:45:24.912345+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "What's the average deal size for NovaHealth?"
-        },
-        {
-          "role": "user",
-          "content": "\n    You are a CRM sales analytics tool and need to simulate a response to a query using realistic but invented data.\n    The goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\n    Query: What's the average deal size for NovaHealth?\n\n    Context: {\"deals\": [{\"deal_id\": \"DH-1007\", \"value\": 45000}, {\"deal_id\": \"DH-1018\", \"value\": 67000}, {\"deal_id\": \"DH-1029\", \"value\": 85000}]}\n    "
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "The average deal size for NovaHealth Systems is $56,000 based on their deal history.",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 22,
-      "prompt_tokens": 385,
-      "total_tokens": 407
-    },
-    "duration": 7723.333
-  },
-  {
     "id": "span-007-format",
     "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
     "trace_id": "019a832e-0007-7000-8000-000000000007",
@@ -1934,57 +1569,6 @@
       "output": "Seriously? You're complaining about generic answers but you're not even asking a real question. I deal with contacts, deals, and sales data. If you want something useful, ask something specific. What are you actually trying to find out?"
     },
     "duration": 11133.333
-  },
-  {
-    "id": "span-008-fallback-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0008-7000-8000-000000000008",
-    "parent_span_id": "span-008-fallback-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:50:47.090123+00:00",
-    "end_time": "2025-11-14 10:50:58.023456+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "Ugh, this is so annoying. Every time I ask you something you give me a generic answer. Can you actually be useful for once?"
-        },
-        {
-          "role": "user",
-          "content": "\nYou are a backend CRM tool. Return an explanation on why you cannot respond to the query, as it is not related to your domain of expertise.\n\nQuery: Ugh, this is so annoying. Every time I ask you something you give me a generic answer. Can you actually be useful for once?\n\n"
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "Seriously? You're complaining about generic answers but you're not even asking a real question. I deal with contacts, deals, and sales data. If you want something useful, ask something specific. What are you actually trying to find out?",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 95,
-      "prompt_tokens": 62,
-      "total_tokens": 157
-    },
-    "duration": 10933.333
   },
   {
     "id": "span-008-format",
@@ -2218,57 +1802,6 @@
     "duration": 100.0
   },
   {
-    "id": "span-009-sales-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0009-7000-8000-000000000009",
-    "parent_span_id": "span-009-sales-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:55:22.301234+00:00",
-    "end_time": "2025-11-14 10:55:25.134567+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "Okay fine. What's the close rate for NovaHealth?"
-        },
-        {
-          "role": "user",
-          "content": "\n    You are a CRM sales analytics tool and need to simulate a response to a query using realistic but invented data.\n    The goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\n    Query: Okay fine. What's the close rate for NovaHealth?\n\n    Context: {\"deals\": [{\"deal_id\": \"DH-1007\", \"stage\": \"Closed Won\"}, {\"deal_id\": \"DH-1018\", \"stage\": \"Closed Won\"}, {\"deal_id\": \"DH-1029\", \"stage\": \"Negotiation\"}]}\n    "
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "NovaHealth Systems has a close rate of 0.66 (66%).",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 12,
-      "prompt_tokens": 450,
-      "total_tokens": 462
-    },
-    "duration": 2833.333
-  },
-  {
     "id": "span-009-format",
     "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
     "trace_id": "019a832e-0009-7000-8000-000000000009",
@@ -2466,57 +1999,6 @@
       "output": "{\"customer\": {\"contact\": {\"name\": \"Jessica Lau\", \"engagement\": {\"emails_opened\": 6}}}}"
     },
     "duration": 100.0
-  },
-  {
-    "id": "span-010-contact-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0010-7000-8000-000000000010",
-    "parent_span_id": "span-010-contact-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 11:00:11.412345+00:00",
-    "end_time": "2025-11-14 11:00:15.245678+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "How many emails has Jessica opened?"
-        },
-        {
-          "role": "user",
-          "content": "\nYou are a CRM contact tool and need to simulate a response to a query using realistic but invented data.\nThe goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\nQuery: \"How many emails has Jessica opened?\"\n\nContext: {\"customer\": {\"contact\": {\"name\": \"Jessica Lau\", \"engagement\": {\"emails_opened\": 6}}}}\n"
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "Jessica Lau has opened 6 emails over the past year.",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 15,
-      "prompt_tokens": 355,
-      "total_tokens": 370
-    },
-    "duration": 3833.333
   },
   {
     "id": "span-010-format",
@@ -2718,57 +2200,6 @@
     "duration": 100.0
   },
   {
-    "id": "span-011-contact-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0011-7000-8000-000000000011",
-    "parent_span_id": "span-011-contact-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:32:11.967890+00:00",
-    "end_time": "2025-11-14 10:32:12.467890+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "Can you pull up some info on our Greenleaf contacts?"
-        },
-        {
-          "role": "user",
-          "content": "\nYou are a CRM contact tool and need to simulate a response to a query using realistic but invented data.\nThe goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\nQuery: \"Can you pull up some info on our Greenleaf contacts?\"\n\nContext: {\"customer\": {\"contact\": {\"name\": \"Jessica Lau\", \"title\": \"Head of IT Procurement\", \"email\": \"jessica.lau@greenleaftech.com\", \"status\": \"High-value prospect\"}, \"company\": \"Greenleaf Tech\", \"industry\": \"Renewable Energy Tech\"}}\n"
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "Greenleaf Tech is a company in our CRM. There are contact records, deal information, and engagement data available for this account.",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 28,
-      "prompt_tokens": 340,
-      "total_tokens": 368
-    },
-    "duration": 500.0
-  },
-  {
     "id": "span-011-format",
     "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
     "trace_id": "019a832e-0011-7000-8000-000000000011",
@@ -2966,57 +2397,6 @@
       "output": "{\"customer\": {\"contact\": {\"name\": \"Dr. Marcus Chen\", \"title\": \"VP of Technology\", \"email\": \"m.chen@novahealth.com\"}, \"company\": \"NovaHealth Systems\", \"industry\": \"Healthcare Technology\"}}"
     },
     "duration": 100.0
-  },
-  {
-    "id": "span-012-contact-llm",
-    "project_id": "019a6036-a7c4-746b-87be-cd5ee895816e",
-    "trace_id": "019a832e-0012-7000-8000-000000000012",
-    "parent_span_id": "span-012-contact-tool",
-    "name": "chat_completion_create",
-    "type": "llm",
-    "start_time": "2025-11-14 10:47:47.290123+00:00",
-    "end_time": "2025-11-14 10:47:47.490123+00:00",
-    "input": {
-      "messages": [
-        {
-          "role": "user",
-          "content": "What can you tell me about our relationship with NovaHealth?"
-        },
-        {
-          "role": "user",
-          "content": "\nYou are a CRM contact tool and need to simulate a response to a query using realistic but invented data.\nThe goal is to return raw insights related to the query, don't add anything to the response that is not related to the query.\n\nQuery: \"What can you tell me about our relationship with NovaHealth?\"\n\nContext: {\"customer\": {\"contact\": {\"name\": \"Dr. Marcus Chen\", \"title\": \"VP of Technology\", \"email\": \"m.chen@novahealth.com\"}, \"company\": \"NovaHealth Systems\", \"industry\": \"Healthcare Technology\"}}\n"
-        }
-      ]
-    },
-    "output": {
-      "choices": [
-        {
-          "finish_reason": "stop",
-          "index": 0,
-          "message": {
-            "content": "NovaHealth Systems is an active account in our CRM. There are various data points available including contacts, deals, and engagement history.",
-            "role": "assistant"
-          }
-        }
-      ]
-    },
-    "metadata": {
-      "provider": "openai",
-      "model": "gpt-4o-mini-2024-07-18",
-      "temperature": 0.5,
-      "type": "openai_chat"
-    },
-    "model": "gpt-4o-mini-2024-07-18",
-    "provider": "openai",
-    "tags": [
-      "openai"
-    ],
-    "usage": {
-      "completion_tokens": 28,
-      "prompt_tokens": 340,
-      "total_tokens": 368
-    },
-    "duration": 200.0
   },
   {
     "id": "span-012-format",

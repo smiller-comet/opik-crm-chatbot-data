@@ -37,11 +37,11 @@
       "total_tokens": 625
     },
     "total_estimated_cost": 0.000125,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 2450.0,
     "thread_id": "thread-001-abc-123",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -92,11 +92,11 @@
       "total_tokens": 668
     },
     "total_estimated_cost": 0.000134,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 2100.0,
     "thread_id": "thread-001-abc-123",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -139,11 +139,11 @@
       "total_tokens": 647
     },
     "total_estimated_cost": 0.000129,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 3200.0,
     "thread_id": "thread-002-def-456",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -186,11 +186,11 @@
       "total_tokens": 678
     },
     "total_estimated_cost": 0.000136,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 2800.0,
     "thread_id": "thread-003-ghi-789",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -241,11 +241,11 @@
       "total_tokens": 503
     },
     "total_estimated_cost": 0.000101,
-    "span_count": 7,
+    "span_count": 6,
     "duration": 3800.0,
     "thread_id": "thread-004-jkl-012",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -304,11 +304,11 @@
       "total_tokens": 695
     },
     "total_estimated_cost": 0.000139,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 1850.0,
     "thread_id": "thread-004-jkl-012",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -351,11 +351,11 @@
       "total_tokens": 622
     },
     "total_estimated_cost": 0.000124,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 2600.0,
     "thread_id": "thread-005-mno-345",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -406,11 +406,11 @@
       "total_tokens": 540
     },
     "total_estimated_cost": 0.000108,
-    "span_count": 7,
+    "span_count": 6,
     "duration": 4200.0,
     "thread_id": "thread-006-pqr-678",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -469,11 +469,11 @@
       "total_tokens": 732
     },
     "total_estimated_cost": 0.000146,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 1950.0,
     "thread_id": "thread-006-pqr-678",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -516,11 +516,11 @@
       "total_tokens": 585
     },
     "total_estimated_cost": 0.000117,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 1800.0,
     "thread_id": "thread-007-stu-901",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -563,11 +563,11 @@
       "total_tokens": 598
     },
     "total_estimated_cost": 0.00012,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 2500.0,
     "thread_id": "thread-004-jkl-012",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
@@ -610,11 +610,11 @@
       "total_tokens": 612
     },
     "total_estimated_cost": 0.000122,
-    "span_count": 8,
+    "span_count": 7,
     "duration": 2200.0,
     "thread_id": "thread-006-pqr-678",
     "visibility_mode": "default",
-    "llm_span_count": 3,
+    "llm_span_count": 2,
     "providers": [
       "openai"
     ]
